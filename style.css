@@ -23,16 +23,6 @@ body {
     margin: 20px 0;
   }
   
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  li {
-    font-family: 'Roboto', sans-serif;
-    margin: 10px 0;
-  }
-  
   /* Hero Section */
   .hero {
     text-align: center;
@@ -68,17 +58,28 @@ body {
     margin-top: 10px;
   }
   
+  /* Hero Text Effects */
+  .name span, .tagline span {
+    display: inline-block;
+    margin-right: 0.05em;
+    transition: transform 0.2s ease, color 0.2s ease, text-shadow 0.2s ease;
+  }
+  
+  .name span:hover, .tagline span:hover {
+    transform: translateY(-5px);
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
+  }
+  
   /* Buttons */
   .btn {
     display: inline-block;
-    margin: 0;
     padding: 10px 20px;
     background: white;
     color: #1e3c72;
     text-decoration: none;
     border-radius: 5px;
     border: 2px solid #0077ff;
-    text-align: center;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
   }
   
@@ -87,7 +88,37 @@ body {
     transform: translateY(-3px);
   }
   
-  /* Image Gallery */
+  /* About Me Section */
+  .about-me {
+    padding: 50px;
+    text-align: center;
+    background: linear-gradient(to bottom, #123366, #0a1e40);
+  }
+  
+  .about-content-box {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    color: white;
+  }
+  
+  /* Proficiencies Section */
+  .proficiencies {
+    padding: 50px;
+    background: linear-gradient(to bottom, #0a1e40, #123366);
+  }
+  
+  .proficiency-category {
+    margin: 20px 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
   .image-gallery {
     display: flex;
     justify-content: center;
@@ -108,10 +139,15 @@ body {
     box-shadow: 0 0 10px #00eaff, 0 0 20px #0077ff;
   }
   
-  /* Click Indicator */
+  .broadcasting-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
   .click-indicator {
     text-align: center;
-    margin-top: 10px;
   }
   
   .click-text {
@@ -125,5 +161,30 @@ body {
     transform: scale(1.1);
     color: #00ffea;
     text-shadow: 0 0 10px #00eaff, 0 0 20px #0077ff;
+  }
+  
+  /* Contact Section */
+  .contacts {
+    padding: 50px;
+    text-align: center;
+    background: linear-gradient(to bottom, #123366, #0a1e40);
+  }
+  
+  .contact-box {
+    padding: 10px 20px;
+    margin: 15px auto;
+    max-width: 300px;
+    border: 2px solid #0077ff;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    color: #00eaff;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-box:hover {
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px #00eaff, 0 0 20px #0077ff;
   }
   

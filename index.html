@@ -29,8 +29,8 @@
 
   <!-- About Me Section -->
   <section id="about-me" class="about-me hidden">
-    <h2>About Me</h2>
     <div class="about-content-box">
+      <h2>About Me</h2>
       <p>
         I am a 20-year-old software engineering student based in Queen Creek, Arizona, currently in my second year of a Software 
         Engineering B.S. at Ira A. Fulton Schools of Engineering (ASU). I am passionate about building interactive web applications, designing user-friendly interfaces, designing machine learning models, and collaborating on innovative solutions for any software-based problems.
@@ -51,11 +51,13 @@
       </p>
       <div class="image-gallery">
         <img src="images/coaching1.jpg" alt="Coaching Baseball 1">
-        <a href="https://youtu.be/wLBkMz6aamk" target="_blank">
-          <img src="images/broadcasting.jpg" alt="Broadcasting Highlight">
-        </a>
-        <div class="click-indicator">
-          <p class="click-text">↑ Click Me ↑</p>
+        <div class="broadcasting-wrapper">
+          <a href="https://youtu.be/wLBkMz6aamk" target="_blank">
+            <img src="images/broadcasting.jpg" alt="Broadcasting Highlight">
+          </a>
+          <div class="click-indicator">
+            <p class="click-text">↑ Click Me ↑</p>
+          </div>
         </div>
         <img src="images/playing.jpg" alt="Playing Baseball">
       </div>
@@ -85,8 +87,12 @@
   <!-- Contact Section -->
   <section id="contacts" class="contacts hidden">
     <h2>Contact Me</h2>
-    <p><strong>Phone:</strong> 480-930-1744</p>
-    <p><strong>Email:</strong> <a href="mailto:adamperri12@gmail.com">adamperri12@gmail.com</a></p>
+    <div class="contact-box" onclick="copyToClipboard('480-930-1744')">
+      <p>Phone: 480-930-1744</p>
+    </div>
+    <div class="contact-box" onclick="copyToClipboard('adamperri12@gmail.com')">
+      <p>Email: adamperri12@gmail.com</p>
+    </div>
   </section>
 
   <script src="script.js"></script>

@@ -34,3 +34,10 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("mousemove", showElements, { once: true });
   });
   
+  // Copy to clipboard function
+  function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
+      alert(`Copied: ${text}`);
+    });
+  }
+  
