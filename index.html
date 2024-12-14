@@ -13,11 +13,14 @@
     <div class="hero-content">
       <h1 class="name" id="name-text">Adam Perri</h1>
       <p class="tagline" id="tagline-text">Aspiring Software Engineer | Creative Problem Solver</p>
-      <div class="links">
-        <a href="#about-me" class="btn">About Me</a>
+      <div class="links top-row">
         <a href="https://linkedin.com/in/adamperr1" target="_blank" class="btn">LinkedIn</a>
         <a href="https://github.com/Adamperri" target="_blank" class="btn">GitHub</a>
-        <a href="mailto:adamperri12@gmail.com" class="btn">Email</a>
+      </div>
+      <div class="links bottom-row">
+        <a href="#about-me" class="btn">About Me</a>
+        <a href="#proficiencies" class="btn">Proficiencies</a>
+        <a href="#contacts" class="btn">Contact</a>
       </div>
     </div>
   </header>
@@ -26,14 +29,11 @@
 
   <!-- About Me Section -->
   <section id="about-me" class="about-me hidden">
-    <div class="about-box">
-      <h2>About Me</h2>
-    </div>
+    <h2>About Me</h2>
     <div class="about-content-box">
       <p>
         I am a 20-year-old software engineering student based in Queen Creek, Arizona, currently in my second year of a Software 
-        Engineering B.S. program. I am passionate about building interactive web applications, designing user-friendly interfaces, 
-        and collaborating on innovative solutions.
+        Engineering B.S. at Ira A. Fulton Schools of Engineering (ASU). I am passionate about building interactive web applications, designing user-friendly interfaces, designing machine learning models, and collaborating on innovative solutions for any software-based problems.
       </p>
     </div>
   </section>
@@ -42,58 +42,51 @@
 
   <!-- Proficiencies Section -->
   <section id="proficiencies" class="proficiencies hidden">
-    <div class="proficiencies-header">
-      <h2>Proficiencies</h2>
-    </div>
+    <h2>Proficiencies</h2>
+    <!-- Personal Characteristics -->
     <div class="proficiency-category">
-      <a href="#personal-characteristics" class="btn proficiency-btn">Personal Characteristics</a>
+      <h3>Personal Characteristics</h3>
+      <p>
+        My passion for baseball has been a central part of my life. I’ve played for years and have been coaching for the last four years, helping players build confidence and skills. Additionally, I have broadcasted live sporting events and created highlights showcasing my skills.
+      </p>
+      <div class="image-gallery">
+        <img src="images/coaching1.jpg" alt="Coaching Baseball 1">
+        <a href="https://youtu.be/wLBkMz6aamk" target="_blank">
+          <img src="images/broadcasting.jpg" alt="Broadcasting Highlight">
+        </a>
+        <div class="click-indicator">
+          <p class="click-text">↑ Click Me ↑</p>
+        </div>
+        <img src="images/playing.jpg" alt="Playing Baseball">
+      </div>
     </div>
+
+    <!-- Coding Languages, Technologies, and Projects -->
     <div class="proficiency-category">
-      <a href="#coding-languages" class="btn proficiency-btn">Coding Languages</a>
-    </div>
-    <div class="proficiency-category">
-      <a href="#coding-technologies" class="btn proficiency-btn">Coding Technologies</a>
+      <h3>Coding Languages, Technologies, and Projects</h3>
+      <p>
+        Here are a few examples of projects I’ve built and their modalities:
+      </p>
+      <ul>
+        <li><strong>Project 1:</strong> A fully functional calculator in JavaScript</li>
+        <li><strong>Project 2:</strong> A Python language Windows-compatible hidden program killer</li>
+        <li><strong>Project 3:</strong> A Python-based machine learning model</li>
+      </ul>
+      <div class="image-gallery">
+        <img src="images/project1.jpg" alt="Project 1 Screenshot">
+        <img src="images/project2.jpg" alt="Project 2 Screenshot">
+        <img src="images/project3.jpg" alt="Project 3 Screenshot">
+      </div>
     </div>
   </section>
 
-  <!-- Personal Characteristics Section -->
-  <section id="personal-characteristics" class="proficiency-detail hidden">
-    <h2>Personal Characteristics</h2>
-    <p>
-      My passion for baseball has been a central part of my life. I’ve played for years and have been coaching for the last four years, helping players build confidence and skills.
-    </p>
-    <div class="image-gallery">
-      <img src="images/baseball1.jpg" alt="Baseball Game 1">
-      <img src="images/baseball2.jpg" alt="Baseball Game 2">
-      <img src="images/coaching.jpg" alt="Coaching Baseball">
-    </div>
-  </section>
+  <hr class="section-divider" />
 
-  <!-- Coding Languages Section -->
-  <section id="coding-languages" class="proficiency-detail hidden">
-    <h2>Coding Languages</h2>
-    <p>
-      I’ve completed multiple coding classes with A grades, showcasing my understanding of programming concepts. Here are a few examples of projects I’ve built:
-    </p>
-    <ul>
-      <li><strong>Project 1:</strong> A fully functional calculator in JavaScript</li>
-      <li><strong>Project 2:</strong> A blog platform built with React.js</li>
-      <li><strong>Project 3:</strong> A SQL database project to manage an inventory system</li>
-    </ul>
-  </section>
-
-  <!-- Coding Technologies Section -->
-  <section id="coding-technologies" class="proficiency-detail hidden">
-    <h2>Coding Technologies</h2>
-    <p>
-      Below are some of the coding technologies I’ve worked with:
-    </p>
-    <ul>
-      <li><strong>React.js:</strong> Developed user interfaces with component-based architecture.</li>
-      <li><strong>Node.js:</strong> Built backend APIs and services for web applications.</li>
-      <li><strong>Git & GitHub:</strong> Version control for collaborative development.</li>
-      <li><strong>SQL:</strong> Designed relational databases for scalable applications.</li>
-    </ul>
+  <!-- Contact Section -->
+  <section id="contacts" class="contacts hidden">
+    <h2>Contact Me</h2>
+    <p><strong>Phone:</strong> 480-930-1744</p>
+    <p><strong>Email:</strong> <a href="mailto:adamperri12@gmail.com">adamperri12@gmail.com</a></p>
   </section>
 
   <script src="script.js"></script>

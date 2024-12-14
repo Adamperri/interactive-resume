@@ -8,9 +8,29 @@ body {
     scroll-behavior: smooth;
   }
   
-  h1, h2 {
+  h1, h2, h3 {
     margin: 0;
     text-align: center;
+    color: #00eaff;
+  }
+  
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: center;
+    color: white;
+    margin: 20px 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px 0;
   }
   
   /* Hero Section */
@@ -18,6 +38,7 @@ body {
     text-align: center;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     opacity: 0;
@@ -30,10 +51,27 @@ body {
     transform: translateY(0);
   }
   
+  .hero-content .links {
+    margin-top: 15px;
+  }
+  
+  .hero-content .links.top-row {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .hero-content .links.bottom-row {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
   /* Buttons */
   .btn {
     display: inline-block;
-    margin: 10px;
+    margin: 0;
     padding: 10px 20px;
     background: white;
     color: #1e3c72;
@@ -49,31 +87,7 @@ body {
     transform: translateY(-3px);
   }
   
-  /* Section Divider */
-  .section-divider {
-    border: none;
-    height: 2px;
-    background: #0077ff;
-    margin: 0;
-  }
-  
-  /* Proficiency Buttons */
-  .proficiency-btn {
-    margin: 10px auto;
-    display: block;
-    width: fit-content;
-  }
-  
-  /* Proficiency Details Section */
-  .proficiency-detail {
-    padding: 50px;
-    max-width: 800px;
-    margin: 50px auto;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-  }
-  
+  /* Image Gallery */
   .image-gallery {
     display: flex;
     justify-content: center;
@@ -83,6 +97,7 @@ body {
   
   .image-gallery img {
     max-width: 200px;
+    height: auto;
     border: 2px solid #00eaff;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -91,5 +106,24 @@ body {
   .image-gallery img:hover {
     transform: scale(1.1);
     box-shadow: 0 0 10px #00eaff, 0 0 20px #0077ff;
+  }
+  
+  /* Click Indicator */
+  .click-indicator {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .click-text {
+    font-size: 1.2rem;
+    color: #00eaff;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .click-text:hover {
+    transform: scale(1.1);
+    color: #00ffea;
+    text-shadow: 0 0 10px #00eaff, 0 0 20px #0077ff;
   }
   
