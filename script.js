@@ -32,6 +32,18 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   
     window.addEventListener("mousemove", showElements, { once: true });
+  
+    // Smooth Scroll Functionality
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      });
+    });
   });
   
   // Copy to clipboard function
