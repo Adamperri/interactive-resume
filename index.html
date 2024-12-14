@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adam Perri - Interactive Resume</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Hero Section -->
   <header class="hero hidden">
     <div class="hero-content">
-      <h1 class="name">Adam Perri</h1>
-      <p class="tagline">Aspiring Software Engineer | Creative Problem Solver</p>
+      <h1 class="name" id="name-text">Adam Perri</h1>
+      <p class="tagline" id="tagline-text">Aspiring Software Engineer | Creative Problem Solver</p>
       <div class="links">
         <a href="#about-me" class="btn">About Me</a>
         <a href="https://linkedin.com/in/adamperr1" target="_blank" class="btn">LinkedIn</a>
@@ -22,15 +22,68 @@
     </div>
   </header>
 
+  <hr class="section-divider" />
+
   <!-- About Me Section -->
   <section id="about-me" class="about-me hidden">
-    <h2>About Me</h2>
-    <p>
-      I am a passionate software engineer with a knack for creative problem-solving. My experience includes building interactive 
-      web applications, designing user-friendly interfaces, and collaborating with teams to deliver innovative solutions. 
-      I thrive on challenges and continuously strive to learn new technologies to create impactful projects.
-    </p>
+    <div class="about-box">
+      <h2>About Me</h2>
+    </div>
+    <div class="about-content-box">
+      <p>
+        I am a passionate software engineer based in Queen Creek, Arizona, currently pursuing a Bachelor of Science in Software Engineering (2nd year). I am 20 years old and enjoy solving complex problems through innovative solutions and teamwork.
+      </p>
+    </div>
   </section>
+
+  <hr class="section-divider" />
+
+  <!-- Proficiencies Section -->
+  <section id="proficiencies" class="proficiencies hidden">
+    <div class="proficiency-header">
+      <h2>Proficiencies</h2>
+    </div>
+    <div class="proficiency-content">
+      <div class="proficiency-category">
+        <h3>Personal Characteristics</h3>
+        <ul>
+          <li>Team-oriented</li>
+          <li>Detail-focused</li>
+          <li>Adaptable to new technologies</li>
+          <li>Strong communication skills</li>
+          <li>Creative problem-solver</li>
+        </ul>
+      </div>
+      <div class="proficiency-category">
+        <h3>Coding Languages</h3>
+        <ul>
+          <li>Java</li>
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>C++</li>
+        </ul>
+      </div>
+      <div class="proficiency-category">
+        <h3>Coding Technologies</h3>
+        <ul>
+          <li>Git and GitHub</li>
+          <li>Node.js</li>
+          <li>React</li>
+          <li>HTML, CSS</li>
+        </ul>
+      </div>
+      <div class="proficiency-category">
+        <h3>Tools and Platforms</h3>
+        <ul>
+          <li>Visual Studio Code</li>
+          <li>Linux Command Line</li>
+          <li>Postman (API Testing)</li>
+          <li>MySQL</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <script src="script.js"></script>
 </body>
 </html>

@@ -2,106 +2,77 @@
 body {
     margin: 0;
     font-family: 'Orbitron', sans-serif;
-    background: linear-gradient(to right, #1e3c72, #2a5298);
+    background: linear-gradient(to right, #0a1e40, #123366); /* Darker blue tones */
     color: white;
     overflow-x: hidden;
-    scroll-behavior: smooth; /* Enables smooth scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling */
   }
   
   h1, h2 {
     margin: 0;
   }
   
-  .hero {
-    text-align: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transform: translateY(-50px);
-    transition: opacity 1s ease, transform 1s ease;
-  }
-  
-  .hero.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .hero-content {
-    text-align: center;
-  }
-  
-  .name {
-    font-size: 3rem;
-  }
-  
-  .tagline {
-    font-size: 1.5rem;
-    margin-top: 0.5rem;
-  }
-  
-  /* Buttons with Bounce Effect */
-  .links {
-    margin-top: 1.5rem;
-  }
-  
-  .btn {
-    display: inline-block;
-    margin: 0 10px;
-    padding: 10px 20px;
-    background: white;
-    color: #1e3c72;
-    text-decoration: none;
-    border-radius: 5px;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .btn:hover span {
-    animation: bounce 0.6s ease infinite;
-    animation-delay: calc(var(--letter-index) * 0.1s);
-  }
-  
-  .btn span {
-    display: inline-block;
-  }
-  
-  /* Sequential Bounce Animation */
-  @keyframes bounce {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
+  /* Section Divider */
+  .section-divider {
+    border: none;
+    height: 2px;
+    background: #0077ff;
+    margin: 0;
   }
   
   /* About Me Section */
-  .about-me {
+  .about-me, .proficiencies {
     padding: 50px;
     text-align: center;
-    background: linear-gradient(to bottom, #2a5298, #1e3c72);
+    background: linear-gradient(to bottom, #123366, #0a1e40);
     width: 100%;
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 1s ease, transform 1s ease;
   }
   
-  .about-me.visible {
+  .about-me.visible, .proficiencies.visible {
     opacity: 1;
     transform: translateY(0);
   }
   
-  .about-me h2 {
-    font-size: 2.5rem;
+  .about-box, .proficiency-header {
     margin-bottom: 20px;
+    padding: 10px 20px;
+    border: 2px solid #0077ff;
+    border-radius: 8px;
+    display: inline-block;
+    color: #00eaff;
   }
   
-  .about-me p {
-    font-size: 1.2rem;
+  .about-content-box, .proficiency-content {
+    padding: 20px;
+    margin-top: 20px;
+    border: 2px solid #0077ff;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.6);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif; /* More readable font */
     line-height: 1.8;
-    max-width: 600px;
-    margin: 0 auto;
+  }
+  
+  .proficiency-category h3 {
+    margin-top: 20px;
+    color: #00eaff;
+    text-shadow: 0 0 5px #00eaff;
+  }
+  
+  .proficiency-category ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .proficiency-category ul li {
+    margin: 5px 0;
+    font-size: 1rem;
+    text-align: left;
   }
   
