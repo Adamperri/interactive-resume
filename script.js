@@ -1,19 +1,30 @@
 // script.js
 
-// Mouse Effect
-document.addEventListener("mousemove", (e) => {
-    const mouseEffect = document.querySelector(".mouse-effect");
-    const x = e.pageX;
-    const y = e.pageY;
-    mouseEffect.style.transform = `translate(${x - 25}px, ${y - 25}px)`; // Offset to center the effect on the cursor
-  });
+document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll(".btn");
+    const hiddenElements = document.querySelectorAll(".hidden");
+    let animationTriggered = false;
   
-  // Smooth Scroll for "About Me" Link
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute("href"));
-      target.scrollIntoView({ behavior: "smooth" });
+    // Add sequential bounce effect to each letter in buttons
+    buttons.forEach((button) => {
+      const text = button.textContent;
+      button.textContent = ""; // Clear original text
+      text.split("").forEach((letter, index) => {
+        const span = document.createElement("span");
+        span.textContent = letter;
+        span.style.setProperty("--letter-index", index);
+        button.appendChild(span);
+      });
     });
+  
+    // Trigger animations when user moves the mouse for the first time
+    const showElements = () => {
+      if (!animationTriggered) {
+        hiddenElements.forEach((el) => el.classList.add("visible"));
+        animationTriggered = true;
+      }
+    };
+  
+    window.addEventListener("mousemove", showElements, { once: true });
   });
   
