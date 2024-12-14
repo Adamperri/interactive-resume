@@ -1,13 +1,4 @@
-// script.js
-
-document.addEventListener("DOMContentLoaded", () => {
-    const nameElement = document.querySelector(".name");
-    nameElement.addEventListener("mouseover", () => {
-      nameElement.textContent = "Hello, I'm [Your Name]!";
-    });
-  
-    nameElement.addEventListener("mouseout", () => {
-      nameElement.textContent = "Your Name";
-    });
+document.addEventListener("mousemove", (e) => {
+    const mouseEffect = document.querySelector(".mouse-effect");
+    mouseEffect.style.transform = `translate(${e.pageX}px, ${e.pageY}px)`;
   });
-  

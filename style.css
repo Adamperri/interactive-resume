@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Orbitron', sans-serif;
     background: linear-gradient(to right, #1e3c72, #2a5298);
     color: white;
     display: flex;
@@ -10,10 +10,25 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden;
+    position: relative;
   }
   
   .hero {
     text-align: center;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 200, 255, 0.8);
+  }
+  
+  .hero-content:hover {
+    box-shadow: 0 0 30px rgba(0, 255, 200, 1);
   }
   
   .name {
@@ -45,6 +60,31 @@ body {
   .links a:hover {
     background: #2a5298;
     color: white;
+  }
+  
+  /* Mouse Effect */
+  .mouse-effect {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    transition: transform 0.05s ease;
+    z-index: 100;
+  }
+  
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 5;
+    pointer-events: none;
   }
   
   /* Animations */
